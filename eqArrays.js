@@ -24,4 +24,4 @@ assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true) // => false
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [1, 2, 4]), true); // => should FAIL
