@@ -10,7 +10,9 @@ const eqObjects = function(object1, object2) {
   }
   for (const properties of Object.keys(object1)) {
     if (Array.isArray(object1[properties]) && Array.isArray(object2[properties])) {
-      return eqArrays(object1[properties], object2[properties]);
+      if (eqArrays(object1[properties], object2[properties]) !== true) {
+        return false;
+      }
     } else if (object1[properties] !== object2[properties]) {
       return false;
     }
@@ -53,7 +55,7 @@ const dc = {
 };
 const cd2 = {
   c: "1",
-  d: ["2", 3,4]
+  d: ["2", 3, 4]
 };
 const games = {
   game1: ["cssource"],
@@ -61,7 +63,7 @@ const games = {
 };
 const games1 = {
   game1: ["cssource"],
-  game2: "csgo"
+  game2: "csgo1"
 };
 
 
@@ -75,4 +77,4 @@ assertEqual(eqObjects(cd, dc), false);
 
 assertEqual(eqObjects(cd, cd2), false);
 
-assertEqual(eqObjects(games,games1),true);
+assertEqual(eqObjects(games,games1),false);
