@@ -4,7 +4,4 @@ const assertEqual = function(actual, expected) {
   return (actual === expected ? console.log(pass) : console.log(fail));
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1,1);
-assertEqual("See","See");
-assertEqual(2,3);
+module.exports = assertEqual;
