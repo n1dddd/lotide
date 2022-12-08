@@ -6,7 +6,7 @@ const tail = function(array) {
   for (let i = 1; i < array.length; i++) { //for loop to loop through all indexes but the first (0)
     newArray.push(array[i]);
   }
-  return console.log(newArray);
+  return newArray;
 };
 
 module.exports = tail;
