@@ -6,4 +6,4 @@ function head(array) {
   return firstElement;
 }
 
-module.exports = head
+module.exports = head;
