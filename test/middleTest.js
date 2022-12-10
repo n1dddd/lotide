@@ -1,5 +1,5 @@
 const _ = require('../index');
-const assert = require('chai').assert
+const assert = require('chai').assert;
 
 describe("#middle", () => {
   it("should return two middle values of array with even numbered amount of elements", () => {

@@ -9,4 +9,10 @@ const tail = function(array) {
   return newArray;
 };
 
+//DRIVE CODE (ORIGINALLY USED FOR TESTING);
+
+// const array = ["Yo Yo", "Lighthouse", "Labs"];
+// tail(array); // no need to capture the return value since we are not checking it
+// assertEqual(array.length, 3); // original array should still have 3 elements!
+
 module.exports = tail;
