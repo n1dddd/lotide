@@ -1,14 +1,4 @@
-//Set "_" to variable that imports required functions from index.js
-//Function eqObjects take two objects in as its arguments
-//Conditional statement, converts the keys of object 1 and 2 to respective arrays
-//Compares object 1 'key' array to object 2 'key' array
-//Return false if their lengths differ
-//Loop through, and convert the keys of object 1 into an array
-//Conditional statement checks if the properties of object 1 and 2 are arrays
-//Using eqArrays function to determine if the properties arrays are indeed equal
-//Return false if properties arrays are not equal
-//If the properties were not arrays, second conditional that checks if the properties are equal
-//Returns true if properties arrays are equal, or if properties themselves are equal
+//Function eqObjects take two objects in as its arguments. Return boolean based on conditional (if the objects are equal or not)
 
 const _ = require('./index')
 const eqArrays = require('./eqArrays');
@@ -30,15 +20,3 @@ const eqObjects = function(object1, object2) {
 };
 
 module.exports = eqObjects;
-
-//DRIVE CODE (ORIGINALLY USED FOR TESTING);
-
-// const games = {
-//   game1: ["cssource"],
-//   game2: "csgo"
-// };
-// const games1 = {
-//   game1: ["cssource"],
-//   game2: "csgo"
-//   game2: "csgo1"
-// };
