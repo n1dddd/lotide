@@ -3,7 +3,7 @@
 const tail = function(array) {
   let newArray = []; 
   if (array.length === 0) { 
-    return newArray;
+    return newArray; 
   }
   for (let i = 1; i < array.length; i++) { 
     newArray.push(array[i]);
