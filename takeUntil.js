@@ -6,7 +6,7 @@ const takeUntil = function(array, callback) {
     if (callback(item) !== true)
       results.push(item);
     else {
-      {break;}
+      break;
     }
   }
   return results;
