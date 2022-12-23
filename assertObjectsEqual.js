@@ -3,7 +3,7 @@
 
 const _ = require('./eqObjects')
 
-const assertEqualObjects = function(actual,expected) {
+const assertObjectsEqual = function(actual,expected) { //changed function to file name
   const inspect = require('util').inspect;
   if (_.eqObjects(actual,expected) === true) {
     console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
@@ -11,4 +11,6 @@ const assertEqualObjects = function(actual,expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
+
+module.exports = assertObjectsEqual;
 
