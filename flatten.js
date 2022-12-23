@@ -1,31 +1,18 @@
-//Set "_" to variable that imports required functions from index.js
-//Function that takes in 1 argument (candyBags)
-//Initialize new empty array to push values into
-//
+//Function that takes in 1 argument (array that contains a single nested array). Return unested array.
 
-const _ = require('./index')
-
-const flatten = function(candyBags) {
+const flatten = function(array) {
   let completeArray = [];
-  for (let nestedBags of candyBags) {
-    if (Array.isArray(nestedBags)) {
-      for (let i = 0; i < nestedBags.length; i++) {
-        completeArray.push(nestedBags[i]);
+  for (let nestedArray of array) {
+    if (Array.isArray(nestedArray)) {
+      for (let i = 0; i < nestedArray.length; i++) {
+        completeArray.push(nestedArray[i]);
       }
     } else {
-      completeArray.push(nestedBags);
+      completeArray.push(nestedArray);
     }
   }
   return completeArray;
 };
-
-//DRIVER CODE
-
-//Console.logs for debugging and verifying functionality (was used earlier, before implementing testing with mocha and chai)
-
-// flatten([1, 2, [3, 4], 5, [6]])  => [1, 2, 3, 4, 5, 6] <= expected output
-// assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1,2,3,4,5,6]);
-
 
 module.exports = flatten;
 
