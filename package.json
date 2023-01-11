@@ -1,6 +1,6 @@
 {
   "name": "@senivd/lotide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "lotide project completed for Lighthouse Labs, mini clone of [Lodash], for learning purposes only",
   "main": "index.js",
   "directories": {
