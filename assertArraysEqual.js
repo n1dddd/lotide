@@ -1,4 +1,4 @@
-const eqArrays = require('./eqArrays') //imports required function from index file
+const eqArrays = require('./eqArrays') //imports required function from file
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1,array2)) {  //eqArrays used to determine if arrays are equal
