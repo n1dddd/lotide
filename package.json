@@ -2,7 +2,7 @@
   "name": "@senivd/lotide",
   "version": "1.0.2",
   "description": "lotide project completed for Lighthouse Labs, mini clone of [Lodash], for learning purposes only",
-  "main": "index.js", //fixed the main
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
