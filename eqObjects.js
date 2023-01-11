@@ -1,6 +1,5 @@
 //Function eqObjects take two objects in as its arguments. Return boolean based on conditional (if the objects are equal or not)
 
-const _ = require('./index')
 const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
